@@ -1,101 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Social proof section</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .card{
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-      h1{
-        color: rgb(110, 21, 110);
-      }
-      .colton{
-        background-color: violet;
-      }
-      .irene{
-        background-color: violet;
-      }
-      .wallace{
-        background-color: violet;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1 class="titulo">
-        10,000+ of our users love our products.
-      </h1>
-   
-      <h3>
-        We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.
-      </h3>
-    
-    <ul>
-      <li>
-        Rated 5 Stars in Reviews
-      </li>
-      <li>
-        Rated 5 Stars in Report Guru
-      </li>
-      <li>
-        Rated 5 Stars in BestTech
-      </li>
-    </ul>
-        
-   
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url(https://fonts.google.com/specimen/Spartan);
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 15px;
+      font-weight: 400, 500, 700;
+      font-family: spartan;
+
+    }
+
+    .card {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1,
+    h3 {
+      color: hsl(300, 43%, 22%);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .estrellas {
+      background-color: hsl(300, 24%, 96%);
+      width: 100%;
+      margin: 0px 35px;
+      text-align: center;
+      border-radius: 5%;
+    }
+
+    .cliente {    
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 5%;
+      padding: 16px;
+    }
+
+    .cliente .dentro span{
+      float: left;
+    }
+
+    .cliente span{
+      padding-top: 50px;
+      vertical-align: top;     
+    }
+
+    .cliente--nombre {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      color: white;
+      margin-left: 8px;
+    }
+
+    .cliente--foto {
+      border-radius: 16px;
+      width: 50px;
+    }
+
+    .cliente--nombre p {
+      margin: 8px 0;
+    }
+
+    img {
+          vertical-align: middle;
+    }
+
+    /* .irene {
+      background-color: violet;
+    }
+
+    .wallace {
+      background-color: violet;
+    }*/
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <div class="card">
+    <h1 class="titulo">
+      10,000+ of our users love our products.
+    </h1>
+
+    <h3>
+      We only provide great products combined with excellent customer service.
+      See what our satisfied customers are saying about our services.
+    </h3>
+
+
+
+
+    <div class="estrellas">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>Rated 5 Stars in Reviews</p>
+    </div>
+    <div class="estrellas">
+      <p>⭐⭐⭐⭐⭐</p>
+      Rated 5 Stars in Report Guru
+    </div>
+    <div class="estrellas">
+      <p>⭐⭐⭐⭐⭐</p>
+      Rated 5 Stars in BestTech
+    </div>
+
+
+
+
+
+    <div class="cliente">
+      <div class="cliente--datos">
+        <img class="cliente--foto" src="images/image-colton.jpg"/>
+        <div class="cliente--nombre">
+          <p>Smith&nbsp</p>
+          <p>Verified buyer</p>
+        </div>
+      </div>
+
+
+      <!--
+      <p> <img style="border-radius: 50%;" src="images/image-colton.jpg" alt="Imagen-cliente1">
+     <span>Smith</span><br><span class="dentro">Verified Buyer</span></p>-->
+
+      
+      <p style="color: white; padding: 10px; margin: 10px;">"We needed the same printed design as the one we had
+        ordered a week prior.
+        Not only did they find the original order, but we also received it in time.
+        Excellent!" </p>
+    </div>
+    <!-- <div class="colton">
+      <p> <img style="border-radius: 50%;" src="images/image-irene.jpg">Irene
+        Verified Buyer</p>
+      <div style="color: white; padding: 10px; margin: 10px;"> "Customer service is always excellent and very quick turn
+        around. Completely
+        delighted with the simplicity of the purchase and the speed of delivery." </div>
+    </div>
+
     <div class="colton">
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    </div>
-    <div class="irene">
-      Irene Roberts 
-      Verified Buyer
-      "Customer service is always excellent and very quick turn around. Completely
-      delighted with the simplicity of the purchase and the speed of delivery."
-    </div>
-    
-    <div class="wallace">
-      Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
-    </div>
-    
+      <p> <img style="border-radius: 50%;" src="images/image-anne.jpg"><span> Anne Smith <br>Verified Buyer</span></p>
+
+      <div style="color: white; padding: 10px; margin: 10px;"> "Put an order with this company and can only praise them
+        for the very high
+        standard. Will definitely use them again and recommend them to everyone!" </div>
+    </div> -->
+
   </div>
-   <!--<div class="attribution">
+  <!--<div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   -->
-  </body>
+</body>
+
 </html>
